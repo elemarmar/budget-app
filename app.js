@@ -11,6 +11,26 @@ const budgetController = (function () {
     this.description = description;
     this.value = value;
   };
+
+  return {
+    addItem: function (type, des, val) {
+      let newItem, ID;
+
+      // create new ID
+      ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
+
+      // create new item
+      if (type === 'inc') {
+        newItem = new Income(ID, des, val);
+      } else if (type === 'exp') {
+        newItem = new Expense(ID, des, val);
+      }
+
+      // push it into data 	structure data.allItems[type].push(newItem);
+      //return the new element
+      return newItem;
+    },
+  };
 })();
 
 //UI CONTROLLER
