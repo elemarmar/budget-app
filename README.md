@@ -5,6 +5,8 @@
 
 This is an app that allows the user to **keep track of expenses and income**. It is built entirely with JavaScript. The purpose was to build a JavaScript-only application that used JS modules and data encapsulation.![back](back-8998420.png)
 
+<br />
+
 ## 🌲 Structure
 
 This app consists of 3 JS modules:
@@ -13,7 +15,7 @@ This app consists of 3 JS modules:
 - `UIController` module, which takes care of the UI: getting input values, adding new items to the UI and updating the UI.
 - `controller` module, which links both `budgetController` and `UIcontroller`: it controls what happens upon each event and delegates tasks to other controllers.
 
-
+<br />
 
 ## ☑️ Features
 
@@ -24,7 +26,7 @@ This app consists of 3 JS modules:
 5. The user can manually delete any item.
 6. A percentage of the expenses based on the total income is available both for the total expenses and each expense item.
 
-
+<br />
 
 ## 📓 Development diary
 
