@@ -23,11 +23,11 @@ This app consists of 3 JS modules:
 
 
 
-### ## Development diary
+## Development diary
 
-1. Planning the app
-2. First steps
-3. Updating the controller and the UI
-4. Deleting items
-5. Updating percentages
-6. Displaying date
+1. [Planning the app](https://github.com/elemarmar/budget-app/blob/master/doc/01-Planning%20of%20the%20app.md)
+2. [First steps](https://github.com/elemarmar/budget-app/blob/master/doc/02-First%20steps.md)
+3. [Updating the controller and the UI](https://github.com/elemarmar/budget-app/blob/master/doc/03-Updating%20the%20controller%20and%20UI.md)
+4. [Deleting items](https://github.com/elemarmar/budget-app/blob/master/doc/04-Deleting%20items.md)
+5. [Updating percentages](https://github.com/elemarmar/budget-app/blob/master/doc/05-Update%20percentages.md)
+6. [Displaying date](https://github.com/elemarmar/budget-app/blob/master/doc/06-Display%20date.md)
