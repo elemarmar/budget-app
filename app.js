@@ -79,9 +79,6 @@ const budgetController = (function () {
         data.allItems[type].splice(index, 1);
       }
     },
-    testing: function () {
-      console.log(data);
-    },
     calculateBudget: function () {
       // calculate total income and expenses
       calculateTotal('exp');
@@ -93,7 +90,6 @@ const budgetController = (function () {
       // calculate percentage of spent income
       if (data.totals.inc > 0) {
         data.percentage = Math.round((data.totals.exp / data.totals.inc) * 100);
-        console.log(data.percentage);
       } else {
         data.percentage = -1; // non-existence
       }
