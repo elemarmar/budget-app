@@ -1,7 +1,11 @@
+# 06- Display date
 
-formatting our budget: numbers: string manipulation
+
+
+### formatting our budget: numbers: string manipulation
+
 - all numbers should have a decimal part with 2 numbers
-- expenses have minus and income numbers have a + sign
+- expenses have - sign and income numbers have a + sign
 - if a number is in the thousands, there should be a comma
 
 we add a method to the UI controller so that each time we display a number on the UI, we call that method, pass in the input number and output the "formative" number
@@ -25,9 +29,12 @@ return (type === 'exp' ? '-' : '+') + ' '  + int + '.' dec;
 }
 ```
 
+<br />
 
-displaying the current month and year
+### displaying the current month and year
+
 We create a new method in the UI module called `displayMonth` 
+
 ```js
 displayMonth: function() {
 	

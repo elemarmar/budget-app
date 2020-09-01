@@ -1,10 +1,13 @@
 # 05 -Updating percentages: controller
 
-## Summary previous steps
+## ⏳ Summary of previous steps
 - set up delete event listener using event delegation
 - deleted an item from data structure and UI
 
-## Next steps
+<br />
+
+
+
 ### updating the percentages: budget controller
 Whenever we add/delete an item we want to update the percentages and display them. 
 We create a new function `updatePercentages` in the app controller
@@ -67,8 +70,10 @@ getPercentages: function() {
 }
 ````
 
+<br />
 
 ### updating the percentages: UI Controller
+
 In the UI controller we create the `displayPercentages` public method:
 ```js
 displayPercentages: function(percentages) {

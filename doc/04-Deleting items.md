@@ -1,6 +1,6 @@
 # 04 - Event delegation
 
-## Summary previous step
+## ⏳ Summary of previous steps
 - add new item to data structure
 - add new item to UI
 - calculate budget
@@ -9,14 +9,24 @@
 
 ---
 
+<br />
+
 ## Next steps:
+
 1. Setting up the Delete Event listener using **event delegation**
 2. Deleting an Item from the budget controller
 3. Deleting an item from the UI
 
-We are going to use **event delegation** because:
-- we are going to have lots of child elements that we are interested in
-- these elements are not yet in our DOM when page is loaded
+
+
+>  ℹ️ We are going to use **event delegation** because:
+>
+> - we are going to have lots of child elements that we are interested in
+> - these elements are not yet in our DOM when page is loaded
+
+
+
+<br />
 
 ---
 
@@ -30,7 +40,9 @@ document.querySelector(DOM.container).addEventListener('click', ctrlDeleteItem);
 }
 
 ````
-👉🏻we use the `<div>` with the class of `container` because it's parent of both the income items and the expenses items. 
+> 👉🏻we use the `<div>` with the class of `container` because it's parent of both the income items and the expenses items. 
+>
+> 
 
 We create the `ctrlDeleteIem` function that will be called when the user clicks on the delete button of any item:
 ```js
@@ -55,7 +67,9 @@ if (itemID) {
 }
 
 ````
-👉🏻We aren't interested in the button element but the parent `<div>` element since we want to delete the whole item from the UI --> DOM traversing.
+>  👉🏻We aren't interested in the button element but the parent `<div>` element since we want to delete the whole item from the UI --> DOM traversing.
+
+<br />
 
 ### Deleting an item from the budget controller
 We create a public method in our budget controller to delete an item from the data structure.
@@ -74,7 +88,10 @@ deleteItem: function(type, id) {
 }
 ```
 
+<br />
+
 ### Deleting an item from the UI
+
 We create a public method in our UI controller to delete an item from the UI
 ```js
 	deleteListItem: function(selectorID) {
@@ -82,4 +99,4 @@ We create a public method in our UI controller to delete an item from the UI
 		element.parentNode.removeChild(element)
 	}
 ```
-👉🏻we can only remove a child element -> we use parentNode, to move to the parent to be able to delete the item. 
+> 👉🏻 we can only remove a child element -> we use parentNode, to move to the parent to be able to delete the item. 

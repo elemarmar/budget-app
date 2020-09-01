@@ -1,6 +1,6 @@
 # 02: Adding a new item to the controller and updating the UI
 
-## summary of what we have so far
+## ⏳ Summary of what we have so far
 - three modules: UI, budgetcontroller and controller
 - controller:
 	- public init method
@@ -10,6 +10,10 @@
 - budgetController:
 	- 2 function constructors: Expense & Income
 	- complex data structure to store the expense and income objects
+
+---
+
+<br />
 
 #### Adding a New Item to Our Budget Controller
 we add a public method in the `budgetController` to allow other modules to add new items into the data structure defined in the previous step.
@@ -51,8 +55,14 @@ const ctrlAddItem = function() {
 ````
 we call the addItem method in controller to add a new item
 
+
+
+<br />
+
+
+
 #### Adding a New Item to the UI
-we create a new public method to `UIcontroller` that adss a list item providing the item as an object and the type (income / expense)
+we create a new public method in `UIcontroller` that adds a list item providing the item as an object and the type (income / expense)
 ```js
 addListItem: function(obj, type) {
 	let html, newHtml, element;
@@ -74,8 +84,8 @@ addListItem: function(obj, type) {
 }
 ```
  we wrap the pieces of strings we want to replace with `%`
- 
- we then call this method inside the `ctrlAddItem` function inside `controller` Module
+
+ we then call this method inside the `ctrlAddItem` function ( `controller` module )
  ```js
  const ctrlAddItem = function () {
  	//...
@@ -83,12 +93,13 @@ addListItem: function(obj, type) {
     // 3-> add new item to UI
     UICtrl.addListItem(newItem, input.type);
  
- `````
+`````
 
- 
+<br />
+
 #### Clearing Our Input Fields
-We want to clear the input fields after we enter an input
-it has to do with the UI -> UIController
+
+We want to clear the input fields after we enter an input. It has to do with the UI -> `UIController`
 
 we add a new public method `clearFields`
 ```js
@@ -102,26 +113,29 @@ clearFields: function() {
 })
 }
 ```
- 
- we add it in the controller module after adding a new item
+
+ we call it in the controller module after adding a new item
  ```js
      // 4-> clear the fields
     UICtrl.clearFields();
 ````
 
+<br />
+
 #### Updaing the Budget: Controller
+
  The last two steps of the `ctrlAddItem`:
  - calculate the budget
  - display the budget on the UI 
  will be executed by another function `updateBudget`
- 
+
  ```js
 const updateBudget = function() {
 // 1-> calculate the budget
 // 2 -> return the budget
 // 3-> display budget on the UI
 }
- ````
+````
 
  We create a public method `calculateBudget` in the buget module:
  ```js
@@ -139,7 +153,7 @@ const updateBudget = function() {
  
  }
  ```
- 
+
  We create a private function to calculate the total -> we'll use to calculate the total income and total expenses
  ```js
  const calculateTotal = function(type) {
@@ -150,8 +164,11 @@ const updateBudget = function() {
 	data.totals[type] = sum;
  }
  ```
- 
- **appController**
+
+ <br />
+
+**appController**
+
  ```js
    const updateBudget = function () {
     // 1-> calculate the budget
@@ -162,7 +179,7 @@ const updateBudget = function() {
 	
     // 3-> display budget on the UI
   };
- ````
+````
 In order to return the budget, we create a new public method in the bugetController called `getBudget`
 ```js
 getBudget: function() {
@@ -175,7 +192,8 @@ getBudget: function() {
 }
 ````
 
- 
+<br />
+
 #### Updating the Budget: UI Controller
 
 We create a new public method in the UI controller module, called `displayBudget`
