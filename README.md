@@ -1,18 +1,21 @@
-#  Budget app
+
+  
+#  💸 Budget app
+
 
 This is an app that allows the user to **keep track of expenses and income**. It is built entirely with JavaScript. The purpose was to build a JavaScript-only application that used JS modules and data encapsulation.![back](back-8998420.png)
 
-## Structure
+## 🌲 Structure
 
 This app consists of 3 JS modules:
 
-- `budgetController` module, which takes care of handling the data, etc.
-- `UIController` module, which takes care of the UI, displaying the data.
-- `controller` module, which acts as the module that links both `budgetController` and `UIcontroller` and handles blabla.
+- `budgetController` module, which takes care of handling the data: adding new items to the data structure, calculating the budget.
+- `UIController` module, which takes care of the UI: getting input values, adding new items to the UI and updating the UI.
+- `controller` module, which links both `budgetController` and `UIcontroller`: it controls what happens upon each event and delegates tasks to other controllers.
 
 
 
-## Features
+## ☑️ Features
 
 1. It displays the current month and year and the budget available for that month.
 2. It displays the total income and the total expenses.
@@ -23,7 +26,7 @@ This app consists of 3 JS modules:
 
 
 
-## Development diary
+## 📓 Development diary
 
 1. [Planning the app](https://github.com/elemarmar/budget-app/blob/master/doc/01-Planning%20of%20the%20app.md)
 2. [First steps](https://github.com/elemarmar/budget-app/blob/master/doc/02-First%20steps.md)
