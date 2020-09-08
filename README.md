@@ -36,3 +36,8 @@ This app consists of 3 JS modules:
 4. [Deleting items](https://github.com/elemarmar/budget-app/blob/master/doc/04-Deleting%20items.md)
 5. [Updating percentages](https://github.com/elemarmar/budget-app/blob/master/doc/05-Update%20percentages.md)
 6. [Displaying date](https://github.com/elemarmar/budget-app/blob/master/doc/06-Display%20date.md)
+
+<br />
+
+## Thanks 
+This project is based on [Jonas Schmedtmann](https://github.com/jonasschmedtmann) budgety project.
